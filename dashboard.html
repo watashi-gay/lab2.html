@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="language sort script.js" defer></script>
+</head>
+<body>
+	<h1>Student dashboard</h1>
+
+	<section class="filter-bar">
+		<div class="filter-container">
+			<div class="filter">
+				<label for="language-filter">Select a language:</label>
+				<select id="language-filter">
+					<option value="All">All</option>
+					<option value="C+">C+</option>
+					<option value="Python">Python</option>
+					<option value="Java">Java</option>
+				</select>		
+			</div>
+		</div>
+
+		<div class="search">
+			<button class="search-btn">Search</button>
+			<input type="text" id="exercise-search" placeholder="Search exercise">
+		</div>
+	</section>
+
+	<section class="exercise-section">
+		<h2>Exercises</h2>
+		<div class="language-group">
+			<h3>C+ Programming</h3>
+			<div class="exercise-list">
+			  <div class="exercise-item not-started" exercise-language="C+">
+				<h4>Exercise: Sorting Algorithm</h4>
+				<p>Description: Implement a basic sorting algorithm.</p>
+				<p>Difficulty: Easy</p>
+				<p>Time Limit: 10 minutes</p>
+				<p>Status: <span>Not Started</span></p>
+				<button onclick="window.location.href='sorting algorithm excercise.html'">Select</button>
+			  </div>
+	  
+			  <div class="exercise-item in-progress" exercise-language="C+">
+				<h4>Exercise: Linked List Operations</h4>
+				<p>Description: Perform basic operations on a linked list.</p>
+				<p>Difficulty: Medium</p>
+				<p>Time Limit: 30 minutes</p>
+				<p>Status: <span>In Progress</span></p>
+				<button onclick="window.location.href='linked list operation excercise.html'">Select</button>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <div class="language-group">
+			<h3>Python Programming</h3>
+			<div class="exercise-list">
+			  <div class="exercise-item completed" exercise-language="Python">
+				<h4>Exercise: Web Scraper</h4>
+				<p>Description: Build a simple web scraper using Python.</p>
+				<p>Difficulty: Hard</p>
+				<p>Time Limit: Indefinite</p>
+				<p>Status: <span>Completed</span></p>
+				<button onclick="window.location.href='web scraper excercise.html'">Select</button>
+			  </div>
+	  
+			  <div class="exercise-item not-started" exercise-language="Python">
+				<h4>Exercise: File I/O Operations</h4>
+				<p>Description: Work with file input/output in Python.</p>
+				<p>Difficulty: Easy</p>
+				<p>Time Limit: 10 minutes</p>
+				<p>Status: <span>Not Started</span></p>
+				<button onclick="window.location.href='file i-o operation excercise.html'">Select</button>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <div class="language-group">
+			<h3>Java Programming</h3>
+			<div class="exercise-list">
+			  <div class="exercise-item not-started" exercise-language="Java">
+				<h4>Exercise: Java Swing Application</h4>
+				<p>Description: Create a simple GUI application using Swing.</p>
+				<p>Difficulty: Medium</p>
+				<p>Time Limit: 30 minutes</p>
+				<p>Status: <span>Not Started</span></p>
+				<button onclick="window.location.href='java swing application excercise.html'">Select</button>
+			  </div>
+	  
+			  <div class="exercise-item in-progress" exercise-language="Java">
+				<h4>Exercise: Multithreading in Java</h4>
+				<p>Description: Implement multithreading with Java threads.</p>
+				<p>Difficulty: Hard</p>
+				<p>Time Limit: Indefinite</p>
+				<p>Status: <span>In Progress</span></p>
+				<button onclick="window.location.href='multithreading(java) excercise.html'">Select</button>
+			  </div>
+			</div>
+		  </div>
+	</section>
+	
+</body>
+</html>
